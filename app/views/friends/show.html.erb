@@ -1,0 +1,14 @@
+<div class="card border-info mb-3" style="max-width: 18rem;">
+  <div class="card-header">
+    <%= render @friend %>
+  </div>
+  <div class="card-body">
+    <div>
+      <%= link_to "Edit", edit_friend_path(@friend),class:"btn btn-secondary me-2" %> 
+      <%= link_to "Back", friends_path ,class:"btn btn-secondary" %>
+      <%= button_to "Delete", @friend, method: :delete ,data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class:"btn btn-danger mt-2" %>
+    </div>
+  </div>
+</div>
+
+

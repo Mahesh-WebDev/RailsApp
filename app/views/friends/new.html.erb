@@ -1,0 +1,10 @@
+
+<% content_for :title, "New friend" %>
+<div class="card">
+  <h5 class="card-header">Add friend</h5>
+  <div class="card-body">
+    <%= render "form", friend: @friend %>
+    <br>
+    <%= link_to "Back", friends_path , class:"btn btn-dark"%>
+  </div>
+</div>
